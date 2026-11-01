@@ -30,7 +30,8 @@ function CategoryPage() {
     <>
       <section className="relative isolate overflow-hidden bg-ink text-ink-foreground">
         <img src={category.image} alt="" className="absolute inset-0 -z-10 h-full w-full object-cover opacity-50" />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-t from-background to-transparent" />
+        <div className="absolute inset-0 -z-10 bg-ink/55" />
+        <div className="hero-fade absolute inset-x-0 bottom-0 -z-10 h-56" />
         <div className="mx-auto max-w-7xl px-5 pb-20 pt-32">
           <p className="text-xs uppercase tracking-[0.35em] text-gold">{category.count} lists</p>
           <h1 className="mt-3 text-6xl md:text-8xl">{category.name}</h1>
