@@ -167,6 +167,22 @@
   background-image: linear-gradient(90deg, transparent, var(--gold), transparent);
 }
 
+/*
+ * Bottom dissolve for dark heroes: eased multi-stop so the image stays clear
+ * most of the way and only melts into the page color near the very bottom
+ * (avoids the hard-edged white band on the light theme).
+ */
+@utility hero-fade {
+  background-image: linear-gradient(
+    to top,
+    var(--color-background) 0%,
+    color-mix(in oklab, var(--color-background) 86%, transparent) 18%,
+    color-mix(in oklab, var(--color-background) 46%, transparent) 48%,
+    color-mix(in oklab, var(--color-background) 14%, transparent) 78%,
+    transparent 100%
+  );
+}
+
 @utility grain {
   position: relative;
   &::after {
