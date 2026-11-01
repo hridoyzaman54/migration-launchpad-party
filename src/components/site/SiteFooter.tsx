@@ -1,7 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Crown } from "lucide-react";
 import { categories } from "@/data/mock";
-import { DesignFeedbackWidget } from "@/components/site/DesignFeedbackWidget";
 
 export function SiteFooter() {
   return (
@@ -44,7 +43,6 @@ export function SiteFooter() {
       <div className="border-t border-border py-6 text-center text-xs text-muted-foreground">
         © 2026 TopTenth. Design prototype.
       </div>
-      <DesignFeedbackWidget />
     </footer>
   );
 }

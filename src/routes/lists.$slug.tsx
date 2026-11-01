@@ -51,7 +51,7 @@ function ListPage() {
       <header className="relative isolate overflow-hidden bg-ink text-ink-foreground">
         <img src={list.image} alt="" className="absolute inset-0 -z-10 h-full w-full object-cover opacity-50" />
         <div className="absolute inset-0 -z-10 bg-ink/60" />
-        <div className="hero-fade absolute inset-x-0 bottom-0 -z-10 h-40 sm:h-52 md:h-64" />
+        <div className="hero-fade absolute inset-x-0 bottom-0 -z-10 h-64" />
         <div className="mx-auto max-w-4xl px-5 pb-24 pt-32 text-center">
           <Link to="/categories/$slug" params={{ slug: list.category }} className="text-xs uppercase tracking-[0.35em] text-gold">
             {categoryName(list.category)}
