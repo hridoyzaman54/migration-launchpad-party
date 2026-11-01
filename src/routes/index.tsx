@@ -42,7 +42,7 @@ function HeroSlider() {
         />
       </AnimatePresence>
       <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink via-ink/70 to-transparent" />
-      <div className="hero-fade absolute inset-x-0 bottom-0 -z-10 h-64 md:h-80" />
+      <div className="hero-fade absolute inset-x-0 bottom-0 -z-10 h-40 sm:h-56 md:h-80" />
 
       <div className="mx-auto flex h-full max-w-7xl flex-col justify-center px-5">
         <p className="text-xs uppercase tracking-[0.4em] text-gold">Ranked · Reviewed · Voted</p>
